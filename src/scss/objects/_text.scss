@@ -1,0 +1,44 @@
+.o-text {
+  h1 {
+    text-align: center;
+  }
+
+  h1 + * {
+    margin-top: vr(1.5);
+  }
+
+  h2 + * {
+    margin-top: vr(1);
+  }
+
+  h3 + * {
+    margin-top: vr(0.75);
+  }
+
+  li {
+    position: relative;
+    padding-left: 1.25rem;
+  }
+
+  li + li {
+    margin-top: 0.5rem;
+  }
+
+  $bullet-size: 0.6rem;
+
+  ul > li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    content: '';
+    border-radius: 100%;
+
+    // TODO: Think of a better way
+    top: vr(0.5) - 0.5 * $bullet-size;
+    left: 0;
+    width: $bullet-size;
+    height: $bullet-size;
+    background-color: color(aureolin);
+    border: 1px solid #ccc;
+  }
+}

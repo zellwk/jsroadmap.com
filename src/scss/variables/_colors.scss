@@ -1,0 +1,32 @@
+
+// Colors
+// ======
+// For project colors.
+//
+// Approach:
+// ---------
+// @LandonSchropp's approach of naming color variables.
+// - http://davidwalsh.name/sass-color-variables-dont-suck
+// - http://chir.ag/projects/name-that-color/
+//
+// Usage:
+// ------
+// .test {
+//   background-color: color(shamrock);
+// }
+//
+// OPTIONAL:
+// --------
+// Sublime gutter: https://sublime.wbond.net/packages/Gutter%20Color
+// See the colors you used in the gutter (Awesome if you use sublime text)
+// ==========
+
+$colors: (
+  w: #fff,
+  hint: #f8f8f8,
+  lilac: #e9e9e9,
+  aureolin: #ffeb00,
+  peridot: #F4E100,
+  b: #282828
+);
+

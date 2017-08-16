@@ -1,0 +1,20 @@
+.c-testimonial {
+}
+
+.c-testimonial + .c-testimonial {
+  margin-top: vr(1.5);
+}
+
+blockquote {
+  border-left: vr(0.25) solid color(aureolin);
+  padding-left: vr(0.75);
+}
+
+cite {
+  display: block;
+  font-style: normal;
+  font-weight: 600;
+  @include typi('s1');
+  color: #666;
+  margin-top: vr(0.5);
+}

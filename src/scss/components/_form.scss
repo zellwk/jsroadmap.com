@@ -1,0 +1,37 @@
+// ======================================
+// # Form item styles and mods
+// ======================================
+.c-form__item {
+  & + & {
+    margin-top: vr(0.75);
+  }
+
+  label {
+    display: block;
+  }
+}
+
+// Questions
+.c-form__question {
+  display: block;
+  @include typi('s1');
+  @include ff('condensed');
+  font-weight: 400;
+
+  + * {
+    margin-top: vr(0.25);
+  }
+}
+
+.c-form__item + .c-form__item--submit {
+  margin-top: vr(1);
+}
+
+.c-form__item--submit {
+  button {
+    width: 100%;
+    padding: 0.875em 0;
+  }
+}
+
+// === End Form item styles and mods

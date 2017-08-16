@@ -1,0 +1,100 @@
+// THEME RESET
+// -----------
+// Personal resets in addition to Normalize.scss
+// ===========
+
+// Use border-box for everything
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+// Resets margins and paddings
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p,
+pre,
+blockquote,
+figure,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  display: block;
+}
+
+a:focus { outline: none; }
+
+// Removes all decimals and discs from li
+li {
+  list-style-type: none;
+}
+
+// Completely resets form items
+// ----------------------------
+// Super hard reset that removes all borders
+// and radiuses of all form items.
+// ============================
+input,
+textarea,
+button {
+  border: 0;
+  border-radius: 0;
+  outline: none;
+  appearance: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+// Set Image and Objects to have a max-width of 100%
+embed,
+iframe,
+img,
+object,
+video {
+  max-width: 100%;
+}
+
+// Taming Table layouts
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+// Intrinsic sizing on figure + Fallback
+figure {
+  max-width: max-content;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+
+  > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}

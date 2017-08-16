@@ -1,0 +1,57 @@
+{% extends 'layout.nunjucks' %}
+
+{% set title='Your JavaScript roadmap is on the way!' %}
+{% set canonical = '/' %}
+{% set blockRobots = true %}
+
+{% block content %}
+<header class="site-header">
+  <div class="logo--small">
+    {% include "logo.svg" %}
+  </div>
+</header>
+<section>
+  <div class="l-wrap o-text">
+    {% markdown %}
+    # Your JavaScript roadmap is on the way!
+    {% endmarkdown %}
+
+    <div class="l-wrap__text">
+      {% markdown %}
+        Check your email in a few minutes and you'll your first lesson waiting patiently to help you learn JavaScript without fear, confusion and overwhelm.
+
+        In the meantime, do you know anyone who'd like to improve their JavaScript-fu? Please feel free to invite them to take go the JavaScript Roadmap course with you! To share the course, simply hit the buttons below! I'd really appreciate if you can share it :)
+
+      {% endmarkdown %}
+      <div class="">
+        {# Facebook share button #}
+        <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fjsroadmap.com&layout=button&size=large&mobile_iframe=false&appId=1812034912446656&width=73&height=28" width="73" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        {# Twitter share button #}
+        <a class="twitter-share-button"
+        href="https://twitter.com/intent/tweet?text=I'm taking the JavaScript Roadmap with @zellwk!. Join me → &url=https://jsroadmap.com"
+        data-size="large">
+        Tweet</a>
+      </div>
+    </div>
+  </div>
+
+
+  {# Twitter share #}
+  <script>window.twttr = (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+
+    t._e = [];
+    t.ready = function(f) {
+      t._e.push(f);
+    };
+
+    return t;
+  }(document, "script", "twitter-wjs"));</script>
+</section>
+{% endblock %}

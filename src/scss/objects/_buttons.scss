@@ -1,0 +1,22 @@
+@mixin o-btn {
+  display: inline-block;
+  position: relative;
+  padding: 0.75em 1.5em;
+  font-size: inherit;
+  white-space: nowrap;
+  transition: background-color 0.15s ease-in-out;
+  // text-transform: lowercase;
+  // font-feature-settings: "liga" 1, "smcp" 1;
+}
+
+.o-btn,
+a.o-btn {
+  @include o-btn;
+  background-color: color(aureolin);
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: color(peridot);
+  }
+}

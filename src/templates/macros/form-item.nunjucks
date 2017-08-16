@@ -1,0 +1,29 @@
+{% macro input(
+  type = 'text',
+  label,
+  name,
+  placeholder,
+  required,
+  classMod
+) %}
+  <div class="c-form__item">
+    <label for="{{name}}">
+      <div class="c-form__question">{{label | markdown}}</div>
+      <input
+        type="{{type}}"
+        name="{{name}}"
+        id="{{name}}"
+        placeholder="{{placeholder}}"
+        {% if required %} required {% endif %}
+      >
+    </label>
+  </div>
+{% endmacro %}
+
+{% macro submit(
+  label
+) %}
+  <div class="c-form__item c-form__item--submit">
+    <button class="o-btn" type="submit">{{label}}</button>
+  </div>
+{% endmacro %}

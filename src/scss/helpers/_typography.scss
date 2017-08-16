@@ -1,0 +1,21 @@
+// Typography mixins
+// -----------------
+
+// Font weight
+// -----------
+@mixin fw($target, $map: $font-weights) {
+  font-weight: map-fetch($font-weights, $target);
+}
+
+// Font Family
+// -----------
+@mixin ff($family, $map: $font-families) {
+  font-family: map-get($map, $family);
+}
+
+@mixin wrap-words {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+}

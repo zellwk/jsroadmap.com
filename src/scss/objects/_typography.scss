@@ -1,0 +1,67 @@
+// Typography
+// ---------------
+// Sets typography for all of document
+// ===============
+
+@include typi-init;
+
+html {
+  @include ff(sans);
+
+  color: color(b);
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'liga' 1;
+}
+
+// Adaptation of Lobotomized Owls Selector on p elements
+p,
+ol,
+ul,
+pre,
+blockquote,
+figure {
+  @include lobo {
+    margin-top: 1rem;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
+h1,
+.t1 {
+  @include typi("t1");
+}
+
+h2,
+.t2 {
+  @include typi("t2");
+}
+
+h3,
+.t3 {
+  @include typi("t3");
+}
+
+.s1 {
+  @include typi("s1");
+}
+
+.s2 {
+  @include typi("s2");
+}
+
+a {
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 600;
+}
+
+em {
+  font-style: italic;
+}

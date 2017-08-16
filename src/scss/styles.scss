@@ -1,0 +1,50 @@
+// Libraries
+// ---------
+
+@import 'lib/lib';
+
+// Helpers
+// -------
+@import 'helpers/helpers';
+
+// @import 'sprite'; // Import sprite if gulp-spriting is used
+
+// Variables
+// ---------
+@import 'variables/colors';
+@import 'variables/typography';
+@import 'variables/breakpoints';
+
+// Reset and base files
+// --------------------
+@import 'base/reset';
+
+// Layouts
+// -------
+@import 'layouts/layouts';
+
+// Objects
+// -------
+// Repeatable objects across the site
+@import 'objects/typography';
+@import 'objects/text';
+@import 'objects/buttons';
+@import 'objects/input';
+@import 'objects/lesson-list';
+@import 'objects/logo';
+@import 'objects/bg';
+@import 'objects/box';
+
+// Components
+// ----------
+// For individual, isolated components
+@import 'components/form';
+@import 'components/about';
+@import 'components/cta';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/testimonial';
+
+// Utils
+// -----
+@import 'utils';

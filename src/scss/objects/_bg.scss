@@ -1,0 +1,47 @@
+.o-bg-hint {
+  position: relative;
+  background-color: color(hint);
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  // overflow: hidden;
+
+  &::before {
+    $diamond-size: 20vw;
+    content: '';
+    display: block;
+    position: absolute;
+    top: -0.5 * $diamond-size;
+    left: -0.15 * $diamond-size;
+    height: $diamond-size;
+    width: $diamond-size;
+    background-color: color(aureolin);
+    transform: rotate(45deg);
+  }
+
+   &::after {
+    $diamond-size: 12.5vw;
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -0.5 * $diamond-size;
+    right: 0.5  * $diamond-size;
+    height: $diamond-size;
+    width: $diamond-size;
+    background-color: color(aureolin);
+    transform: rotate(45deg);
+  }
+
+  > * {
+    position: relative;
+  }
+}
+
+.o-bg-lilac {
+  background-color: color(lilac);
+}
+
+.o-bg-aureolin {
+  background-color: color(aureolin);
+  // border-top: 1px solid #eee;
+  // border-bottom: 1px solid #eee;
+}

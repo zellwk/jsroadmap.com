@@ -1,0 +1,37 @@
+@mixin input {
+  display: block;
+  width: 100%;
+  padding: 0.75em;
+  border: 1px solid #ccc;
+  color: color(mine);
+  @include typi('s2');
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+
+  &::placeholder {
+    color: #bbb;
+  }
+
+  &:required {
+    background-color: #fcfcfc;
+  }
+
+  &:valid {
+    background-color: color(w);
+  }
+}
+
+// Text input
+[type='text'],
+[type='email'] {
+  @include input;
+}
+
+// Capitalize all input with the a name of 'name'
+input[name*='name'] { text-transform: capitalize; }
+
+textarea {
+  @include input;
+  min-height: vr(6);
+}

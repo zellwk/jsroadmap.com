@@ -1,0 +1,39 @@
+
+// Typography
+// ----------
+// For all Typography related values.
+// ==========
+
+$ms-ratio: 1.33;
+$typi: (
+  base: (
+    null: (20px, 1.4),
+    wide: (24px),
+  ),
+  t1: (
+    null: (ms(3), 1.4),
+  ),
+  t2: (
+    null: (ms(2))
+  ),
+  t3: (
+    null: (ms(1), 1.333)
+  ),
+  s1: (
+    null: (ms(-1), 1)
+  ),
+  s2: (
+    null: (ms(-2))
+  )
+);
+
+// Font Families
+// ------------
+$font-families: (
+  sans: ('freight-sans-pro', 'Helvetica Neue', sans-serif),
+);
+
+$font-weights: (
+  normal: 400,
+  bold: 600
+)

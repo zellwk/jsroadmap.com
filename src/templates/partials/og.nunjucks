@@ -1,0 +1,18 @@
+
+{# Open Graph Tags #}
+<meta property="og:site_name" content="{{title}}"/>
+<meta property="og:title" content="{{title}}"/>
+<meta name="og:description" content="{{description}}" />
+<meta property="og:email" content="zell@zellwk.com">
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://jsroadmap.com"/>
+<meta property="og:image" content="/images/twitter.jpg"/>
+
+{# Twitter Tags #}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@zellwk">
+<meta name="twitter:creator" content="@zellwk">
+<meta name="twitter:title" content="{{title}}">
+<meta name="twitter:description" content="{{description}}" />
+<meta name="twitter:image" content="/images/twitter.jpg">
+<link rel="author" href="https://plus.google.com/u/0/107981139229061135975">

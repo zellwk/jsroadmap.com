@@ -1,0 +1,27 @@
+.l-wrap {
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.l-wrap__text {
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.l-wrap__small {
+  max-width: 25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  padding: vr(3);
+}
+
+.l-wrap + .l-wrap {
+  margin-top: vr(3);
+}

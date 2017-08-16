@@ -1,0 +1,20 @@
+.o-lesson-list {
+  counter-reset: lesson-counter;
+
+  li {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 0.35em;
+    padding: 0;
+  }
+
+  li + li {
+    margin-top: 0.25rem;
+  }
+
+  li:before {
+    counter-increment: lesson-counter;
+    content: "" counter(lesson-counter) ".";
+    // font-weight: 600;
+  }
+}
