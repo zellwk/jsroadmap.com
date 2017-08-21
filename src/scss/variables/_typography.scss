@@ -7,17 +7,22 @@
 $ms-ratio: 1.33;
 $typi: (
   base: (
-    null: (20px, 1.4),
-    wide: (24px),
+    null: (18px, 1.4),
+    med: (20px),
+    large: (22px),
+    wide: 24px
   ),
   t1: (
-    null: (ms(3), 1.4),
+    null: (ms(2), 1.4),
+    large: (ms(3), 1.4),
   ),
   t2: (
-    null: (ms(2))
+    null: (ms(1)),
+    large: (ms(2))
   ),
   t3: (
-    null: (ms(1), 1.333)
+    null: (ms(0), 1.333),
+    large: (ms(1), 1.333)
   ),
   s1: (
     null: (ms(-1), 1)

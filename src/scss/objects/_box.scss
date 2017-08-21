@@ -1,4 +1,9 @@
 .o-box {
+  margin-top: vr(1.5);
   padding: vr(1.5);
   border: 5px solid #eee;
+}
+
+.o-box + *:not(p) {
+  margin-top: vr(1.5);
 }

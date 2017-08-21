@@ -14,7 +14,7 @@
 
   li:before {
     counter-increment: lesson-counter;
-    content: "" counter(lesson-counter) ".";
-    // font-weight: 600;
+    content: "Lesson " counter(lesson-counter) ":";
+    font-weight: 600;
   }
 }

@@ -13,15 +13,16 @@
 <section>
   <div class="l-wrap o-text">
     {% markdown %}
-    # Your JavaScript roadmap is on the way!
+    # Your JavaScript Roadmap is on the way!
     {% endmarkdown %}
 
     <div class="l-wrap__text">
       {% markdown %}
-        Check your email in a few minutes and you'll your first lesson waiting patiently to help you learn JavaScript without fear, confusion and overwhelm.
+      Check your email in a few minutes and you'll find your first lesson waiting patiently to help you learn JavaScript without fear, confusion and overwhelm.
 
-        In the meantime, do you know anyone who'd like to improve their JavaScript-fu? Please feel free to invite them to take go the JavaScript Roadmap course with you! To share the course, simply hit the buttons below! I'd really appreciate if you can share it :)
+      In the meantime, do you know anyone who'd like to improve their JavaScript-fu? If you do, please feel free to invite them to take JavaScript Roadmap together with you! To share the course, simply hit the buttons below!
 
+      I really appreciate your help in sharing JavaScript Roadmap :)
       {% endmarkdown %}
       <div class="">
         {# Facebook share button #}

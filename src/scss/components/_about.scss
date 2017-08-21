@@ -5,13 +5,19 @@
 }
 
 .c-about__image {
-  max-width: vr(10);
-  margin-top: vr(0.45);
-  float: left;
+  @include bp(med) {
+    max-width: vr(10);
+    margin-top: vr(0.45);
+    float: left;
+  }
 }
 
 .c-about__description {
-  padding-left: vr(11.5);
+  margin-top: vr(0.5);
+  @include bp(med) {
+    margin-top: 0;
+    padding-left: vr(11.5);
+  }
 }
 
 .c-about__title {

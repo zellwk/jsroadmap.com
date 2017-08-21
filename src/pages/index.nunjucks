@@ -14,72 +14,71 @@
 <section>
   <div class="l-wrap o-text">
     {% markdown %}
-    # Learn JavaScript without feeling afraid, overwhelmed or confused
+    # JavaScript beginners: Learn JavaScript without feeling afraid, overwhelmed, or confused
     {% endmarkdown %}
 
     <div class="l-wrap__text">
       {% markdown %}
-      You know JavaScript is important. You need to master it.
+      You know JavaScript is important.
 
-      **But as you read tutorials you can't understand, your confidence wavers**. You may even feel scared, stupid and utterly confused. Can you even learn JavaScript?
+      With better JavaScript skills, you can build components from scratch without spending hours googling and modifying existing components.
 
-      You can.
+      You can feel confident in JavaScript interviews, giving you a better chance to get the frontend development job you've been dreaming for.
 
-      In this **free JavaScript Roadmap** email course, you'll find information to help you master JavaScript in the shortest time possible, including:
+      **But as you read JavaScript tutorials, you feel you can't understand the material no matter how hard you try. You feel your confidence level waver.**
 
-      - **A simple 4-step process to learning JavaScript** that can save you years of wasted effort from going in the wrong direction
-      - **How to avoid 3 learning traps** that leave you feeling confused, paralyzed and overwhelm.
-      - **Questions in each lesson to test your understanding of JavaScript** – so you know your fundamentals are strong enough to tackle questions you face.
-      - **How to choose what to learn** (like plain JS, React, Node, etc.) in the rapidly changing web development industry.
+      You may even feel scared, stupid and utterly confused. Maybe you end up asking yourself: "Can I really learn JavaScript?".
 
-      If you're interested to learn JavaScript quickly and completely, you're invited to leave your name and email below to grab your JavaScript Roadmap.
+      Let me tell you, you *can* learn JavaScript.
+
+      In this **free email course** on JavaScript, you'll follow a roadmap to help you understand JavaScript in the shortest time possible, including:
+
+      - **A simple 4-step process you can follow to learn JavaScript**. This process will save you *years* of wasted effort from going in the wrong direction in your studies.
+      - **How to avoid 3 learning traps in JavaScript** that leave you feeling confused, paralyzed, or overwhelmed.
+      - **Instructions on what to learn and review – and simple questions to test your understanding – so you know your JavaScript fundamentals are strong enough to tackle any JavaScript challange you may face.
+      - **How to choose what to learn** (like vanilla JS, React, Node, etc.), **why learn them**, **when to learn them** and **how to learn them** so you can build that what you want to achieve your dreams.
+
+      If you're interested to learn JavaScript without feeling afraid, confused, or overwhelmed, you're invited to grab your JavaScript Roadmap. Just leave your name and email address below and you'll get everything sent to your inbox over the next three weeks.
       {% endmarkdown %}
     </div>
-  </div>
 
-  <div class="o-box o-text c-cta">
-    <form class="">
-      <h3>Grab the free JavaScript Roadmap and start mastering JavaScript</h3>
+    <div class="o-box o-text c-cta">
+      {% import 'macros/ck-form.nunjucks' as form %}
+      {{form.ckForm(title = 'Grab the free roadmap to learn JavaScript without fear, confusion and overwhelm' )}}
+    </div>
 
-      {% import 'macros/form-item.nunjucks' as formItem %}
+    <div class="l-wrap__text">
+      <div class="c-testimonial">
+        <blockquote>
+          {% markdown %}
+          When I stumbled on Zell's articles, I was looking for in-depth tutorials. His articles helped me solve critical problems I had while completing an assignment for a job application. As a result, I got a front end web dev job abroad, in the wonderful city of Lausanne in Switzerland!
 
-      {{formItem.input(
-      name = 'name',
-      label = 'Your name',
-      placeholder = 'Your name',
-      required = true
-      )}}
-
-      {{formItem.input(
-      name = 'email',
-      type = 'email',
-      label = 'Your email',
-      placeholder = 'awesome@gmail.com',
-      required = true
-      )}}
-
-      {{formItem.submit(
-      label = 'Send me the roadmap'
-      )}}
+          What I loved about his work is that they're really *detailed but not overwhelming*. He guides the reader slowly from basics to more advanced concepts, *step by step*, taking time to *make sure everything gets well understood before going deeper*. He understands my needs, offers solutions, but doesn't force me into a one.
+          <cite>Pierre Wizla, frontend developer</cite>
+          {% endmarkdown %}
+        </blockquote>
+      </div>
     </div>
   </div>
+</div>
+
 </section>
 
 <section class="o-bg-hint">
   <div class="l-wrap">
-    <div class="l-wrap__small o-text o-lesson-list">
+    <div class="l-wrap__text o-text o-lesson-list">
       {% markdown %}
       ## Here's what you'll learn
 
-      JavaScript Roadmap is an email course that contains the following lessons. Each lesson is succint and shows you how to break through your current predicament to learn JavaScript completely.
+      JavaScript Roadmap is an email course that will teach you the following lessons. Each lesson is brief and clear, showing you a path to learn JavaScript without you feeling afraid, overwhelmed or confused.
 
-      1. How to fight confusion, overwhelm, fear and JavaScript fatigue
+      1. How to fight fear, overwhelm and confusion JavaScript fatigue
       2. How to learn JavaScript with rocket speed
       3. How to learn JavaScript from scratch without any coding experience
       4. How to master the DOM and start building real things
       5. How to improve your JavaScript fundamentals
       6. How to choose JavaScript libraries and frameworks to learn
-      7. How to choose what to learn next
+      7. How to choose what to learn next on your JavaScript Roadmap.
       {% endmarkdown %}
     </div>
   </div>
@@ -91,13 +90,13 @@
       <img class="c-about__image"src="images/zell.jpg" alt="Zell Liew">
       <div class="c-about__description">
         {% markdown %}
-        ## About the teacher
+        ## About your teacher
 
         Hey, I'm Zell. I've helped over 30,000 developers like yourself learn about frontend development every month.
 
         Like you, I was deathly afraid of JavaScript when I first started. I couldn't understand it. Nothing I read would register in my head. I used to think that's because I don't have a programming background.
 
-        But that's not true. After becoming fluent with JavaScript, I realized that anyone can become good at it, and I want to help you get to where I am.
+        But that's not true. After becoming fluent with JavaScript, I realized that anyone can become good at it. I want to help you understand how to to become fluent in JavaScript without feeling afraid, overwhelmed or confused.
         {% endmarkdown %}
       </div>
     </div>
@@ -106,25 +105,17 @@
   <div class="l-wrap">
     <div class="l-wrap__text o-text">
       {% markdown %}
-      ## What others have said about my stuff
+      ## Kind words from others
+
+      I don't have testimonials for JavaScript Roadmap yet, but I will shortly. In the meantime, here are some kind words people have said about my work:
       {% endmarkdown %}
 
-      <div class="c-testimonial">
-        <blockquote>
-          {% markdown %}
-          When I stumbled on Zell's articles, I was looking for in-depth tutorials. His articles helped me solve critical problems I had while completing an assignment for a job application. As a result, I got a front end web dev job abroad, in the wonderful city of Lausanne in Switzerland!
-
-          What I loved about his work is that they're really *detailed but not overwhelming*. He guides the reader slowly from basics to more advanced concepts, *step by step*, taking time to *make sure everything gets well understood before going deeper*. He understands my needs, offers solutions, but doesn't force me into a one.
-          <cite>Pierre Wizla, frontend developer</cite>
-          {% endmarkdown %}
-        </blockquote>
-      </div>
 
       <div class="c-testimonial">
         <blockquote>
           {% markdown %}
           I've been writing software for 20 years, long enough to know that getting expert, *thorough and well written* help on new topics was hopeless. People like Zell, who go out and become experts, then work hard to teach others like me are the reason software is easier fun to write these days. I'd *gladly pay for the excellent content that Zell produces* – it's so much more efficient to learn from experts like him.
-          <cite>Eric Gaut</cite>
+          <cite>Eric Gaut, software engineer</cite>
           {% endmarkdown %}
         </blockquote>
       </div>
@@ -133,46 +124,42 @@
         <blockquote>
           {% markdown %}
           I like Zell's explanation style and *ability to split complicated stuff into chewable fragments*. The explanation itself *does not make me feel a bit stupid*. On the contrary, I got it, so I'm able to move forward.
-          <cite>Vladimir</cite>
+          <cite>Vladimir, frontend developer</cite>
           {% endmarkdown %}
         </blockquote>
       </div>
+
+      <div class="c-testimonial">
+        <blockquote>
+          {% markdown %}
+          Zell is a very talented developer with in-depth knowledge of various front-end technologies and tools. He's not only proficient at his work, but he also regularly shares his knowledge with the community. His books and articles are so well written and so full of useful information that I would recommend them to everyone in the web development industry.
+          <cite>Zoran Jambor, CSS Weekly curator</cite>
+          {% endmarkdown %}
+        </blockquote>
+      </div>
+
     </div>
   </div>
 </section>
 
 <section class="">
   <div class="l-wrap o-text">
+    <h2 class="t1 u-text-center">Want to learn JavaScript without feeling afraid, overwhelmed, or confused?</h2>
     <div class="l-wrap__text">
-      <h1>Want to superspeed your JavaScript learning process? <br> 🚀</h1>
       <div class="o-box c-cta">
-        <form class="">
-          <h3>Grab the free JavaScript Roadmap and start learning JavaScript</h3>
-
-          {% import 'macros/form-item.nunjucks' as formItem %}
-
-          {{formItem.input(
-          name = 'name',
-          label = 'Your name',
-          placeholder = 'Your name',
-          required = true
-          )}}
-
-          {{formItem.input(
-          name = 'email',
-          type = 'email',
-          label = 'Your email',
-          placeholder = 'awesome@gmail.com',
-          required = true
-          )}}
-
-          {{formItem.submit(
-          label = 'Send me the roadmap'
-          )}}
-        </div>
+        {% import 'macros/ck-form.nunjucks' as form %}
+        {{form.ckForm(title = 'Grab the free JavaScript Roadmap and start understanding JavaScript' )}}
       </div>
+
+      {% markdown %}
+      <p class="l-wrap__small">
+        PS: not interested in learning JavaScript? That's fine. I send out a weekly newsletter to my readers become frontend developers. <a href="https://zellwk.com/newsletter/">Sign up here</a> and you'll get the next issue delivered to your inbox.
+      </p>
+      {% endmarkdown %}
     </div>
   </div>
+</div>
+
 </section>
 
 <footer class="site-footer"></footer>

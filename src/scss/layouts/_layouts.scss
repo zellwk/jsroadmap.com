@@ -2,8 +2,8 @@
   max-width: 50rem;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: vr(1);
+  padding-right: vr(1);
 }
 
 .l-wrap__text {
@@ -19,7 +19,8 @@
 }
 
 section {
-  padding: vr(3);
+  padding-top: vr(3);
+  padding-bottom: vr(3);
 }
 
 .l-wrap + .l-wrap {

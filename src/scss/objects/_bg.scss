@@ -1,34 +1,50 @@
 .o-bg-hint {
+  #{--diamond-size}: 4em;
   position: relative;
   background-color: color(hint);
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
-  // overflow: hidden;
 
   &::before {
-    $diamond-size: 20vw;
     content: '';
     display: block;
     position: absolute;
-    top: -0.5 * $diamond-size;
-    left: -0.15 * $diamond-size;
-    height: $diamond-size;
-    width: $diamond-size;
+    top: calc(-0.5 * var(#{--diamond-size}));
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: var(#{--diamond-size});
+    width: var(#{--diamond-size});
     background-color: color(aureolin);
     transform: rotate(45deg);
+
+    @include bp(large) {
+      #{--diamond-size}: 20vw;
+      left: calc(-0.15 * var(#{--diamond-size}));
+      right: auto;
+    }
   }
 
-   &::after {
-    $diamond-size: 12.5vw;
+  &::after {
     content: '';
     display: block;
     position: absolute;
-    bottom: -0.5 * $diamond-size;
-    right: 0.5  * $diamond-size;
-    height: $diamond-size;
-    width: $diamond-size;
+    left: 0;
+    right: 0;
+    bottom: calc(-0.5 * var(#{--diamond-size}));
+    height: var(#{--diamond-size});
+    width: var(#{--diamond-size});
+    margin-left: auto;
+    margin-right: auto;
     background-color: color(aureolin);
     transform: rotate(45deg);
+
+    @include bp(large) {
+      #{--diamond-size}: 12.5vw;
+      right: calc(0.5 * var(#{--diamond-size}));
+      left: auto;
+    }
   }
 
   > * {
@@ -42,6 +58,7 @@
 
 .o-bg-aureolin {
   background-color: color(aureolin);
+
   // border-top: 1px solid #eee;
   // border-bottom: 1px solid #eee;
 }
