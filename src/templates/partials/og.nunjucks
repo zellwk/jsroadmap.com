@@ -14,5 +14,7 @@
 <meta name="twitter:creator" content="@zellwk">
 <meta name="twitter:title" content="{{title}}">
 <meta name="twitter:description" content="{{description}}" />
-<meta name="twitter:image" content="/images/twitter.jpg">
+<meta name="twitter:image" content="https://jsroadmap.com/images/twitter.jpg">
+
+{# Google #}
 <link rel="author" href="https://plus.google.com/u/0/107981139229061135975">

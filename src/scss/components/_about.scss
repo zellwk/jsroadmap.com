@@ -23,3 +23,19 @@
 .c-about__title {
   text-align: left;
 }
+
+.c-about__sp {
+  border-left: vr(0.25) solid color(aureolin);
+  padding-left: vr(0.75);
+  margin-top: vr(1.25);
+  @include typi('s1');
+
+  svg {
+    color: #333;
+    margin-top: vr(0.65);
+
+    @include bp(med) {
+      margin-top: vr(0.25);
+    }
+  }
+}

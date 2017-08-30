@@ -18,9 +18,11 @@
 
     <div class="l-wrap__text">
       {% markdown %}
-      Check your email in a few minutes and you'll find your first lesson waiting patiently to help you learn JavaScript without fear, confusion and overwhelm.
+      Check your email in a few minutes and you'll find your first lesson in your inbox, waiting patiently to help you learn JavaScript without fear, confusion and overwhelm.
 
-      In the meantime, do you know anyone who'd like to improve their JavaScript-fu? If you do, please feel free to invite them to take JavaScript Roadmap together with you! To share the course, simply hit the buttons below!
+      In the meantime, do you know anyone who'd like to improve their JavaScript-fu? If you do, please feel free to invite them to take JavaScript Roadmap together with you!
+
+      To share the course, simply hit the buttons below!
 
       I really appreciate your help in sharing JavaScript Roadmap :)
       {% endmarkdown %}
@@ -29,13 +31,12 @@
         <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fjsroadmap.com&layout=button&size=large&mobile_iframe=false&appId=1812034912446656&width=73&height=28" width="73" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
         {# Twitter share button #}
         <a class="twitter-share-button"
-        href="https://twitter.com/intent/tweet?text=I'm taking the JavaScript Roadmap with @zellwk!. Join me → &url=https://jsroadmap.com"
+        href="https://twitter.com/intent/tweet?text=Join me in this FREE JavaScript course by @zellwk to learn JavaScript without fear, overwhelm and confusion 👉 https://jsroadmap.com "
         data-size="large">
         Tweet</a>
       </div>
     </div>
   </div>
-
 
   {# Twitter share #}
   <script>window.twttr = (function(d, s, id) {

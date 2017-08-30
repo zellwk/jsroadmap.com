@@ -1,7 +1,7 @@
 {% extends 'layout.nunjucks' %}
 
 {% set title='JavaScript Roadmap' %}
-{% set description="Learn JavaScript without feeling afraid, overwhelmed or confused" %}
+{% set description="A FREE email course to help you learn JavaScript without feeling afraid, overwhelmed or confused." %}
 {% set canonical = '/' %}
 
 {% block content %}
@@ -21,7 +21,7 @@
       {% markdown %}
       You know JavaScript is important.
 
-      With better JavaScript skills, you can build components from scratch without spending hours googling and modifying existing components.
+      With enough JavaScript skills, you can build components from scratch without spending hours googling and modifying existing components.
 
       You can feel confident in JavaScript interviews, giving you a better chance to get the frontend development job you've been dreaming for.
 
@@ -33,18 +33,18 @@
 
       In this **free email course** on JavaScript, you'll follow a roadmap to help you understand JavaScript in the shortest time possible, including:
 
-      - **A simple 4-step process you can follow to learn JavaScript**. This process will save you *years* of wasted effort from going in the wrong direction in your studies.
+      - **A simple 4-step process you can follow to learn JavaScript**. This process will save you *years* of wasted effort from going in the wrong direction.
       - **How to avoid 3 learning traps in JavaScript** that leave you feeling confused, paralyzed, or overwhelmed.
-      - **Instructions on what to learn and review – and simple questions to test your understanding – so you know your JavaScript fundamentals are strong enough to tackle any JavaScript challange you may face.
-      - **How to choose what to learn** (like vanilla JS, React, Node, etc.), **why learn them**, **when to learn them** and **how to learn them** so you can build that what you want to achieve your dreams.
+      - **Lessons on how to choose what to learn** (like vanilla JS, React, Node, etc.), **why learn them**, **when to learn them** and **how to learn them**, so you no longer feel helpless when you don't understand documentations.
+      - **Instructions on what to learn** – **and simple questions to test your understanding** – so you know your JavaScript fundamentals are strong enough to tackle any JavaScript challange you may face.
 
-      If you're interested to learn JavaScript without feeling afraid, confused, or overwhelmed, you're invited to grab your JavaScript Roadmap. Just leave your name and email address below and you'll get everything sent to your inbox over the next three weeks.
+      I invite you to grab your JavaScript Roadmap if you're interested to learn JavaScript without feeling afraid, confused, or overwhelmed. Leave your name and email address below, and you'll get everything sent to your inbox over the next three weeks.
       {% endmarkdown %}
     </div>
 
     <div class="o-box o-text c-cta">
       {% import 'macros/ck-form.nunjucks' as form %}
-      {{form.ckForm(title = 'Grab the free roadmap to learn JavaScript without fear, confusion and overwhelm' )}}
+      {{form.ckForm(title = 'Grab the FREE roadmap to learn JavaScript without fear, confusion and overwhelm' )}}
     </div>
 
     <div class="l-wrap__text">
@@ -70,7 +70,7 @@
       {% markdown %}
       ## Here's what you'll learn
 
-      JavaScript Roadmap is an email course that will teach you the following lessons. Each lesson is brief and clear, showing you a path to learn JavaScript without you feeling afraid, overwhelmed or confused.
+      JavaScript Roadmap is an email course that will teach you lessons below. Each lesson is brief and clear, showing you a path to learn JavaScript without you feeling afraid, overwhelmed or confused.
 
       1. How to fight fear, overwhelm and confusion JavaScript fatigue
       2. How to learn JavaScript with rocket speed
@@ -85,23 +85,6 @@
 </section>
 
 <section class="">
-  <div class="l-wrap">
-    <div class="c-about">
-      <img class="c-about__image"src="images/zell.jpg" alt="Zell Liew">
-      <div class="c-about__description">
-        {% markdown %}
-        ## About your teacher
-
-        Hey, I'm Zell. I've helped over 30,000 developers like yourself learn about frontend development every month.
-
-        Like you, I was deathly afraid of JavaScript when I first started. I couldn't understand it. Nothing I read would register in my head. I used to think that's because I don't have a programming background.
-
-        But that's not true. After becoming fluent with JavaScript, I realized that anyone can become good at it. I want to help you understand how to to become fluent in JavaScript without feeling afraid, overwhelmed or confused.
-        {% endmarkdown %}
-      </div>
-    </div>
-  </div>
-
   <div class="l-wrap">
     <div class="l-wrap__text o-text">
       {% markdown %}
@@ -137,10 +120,34 @@
           {% endmarkdown %}
         </blockquote>
       </div>
+    </div>
+  </div>
 
+  <div class="l-wrap">
+    <div class="c-about">
+      <img class="c-about__image"src="images/zell.jpg" alt="Zell Liew">
+      <div class="c-about__description">
+        {% markdown %}
+        ## About your teacher
+
+        Hey, I'm Zell. I've helped over 30,000 developers like yourself learn about frontend development every month.
+
+        Like you, I was deathly afraid of JavaScript when I first started. I couldn't understand it. Nothing I read would register in my head. I used to think that's because I don't have a programming background.
+
+        But that's not true. After becoming fluent with JavaScript, I realized that anyone can become good at it. I want to help you understand how to to become fluent in JavaScript without feeling afraid, overwhelmed or confused.
+        {% endmarkdown %}
+      </div>
+
+      <div class="c-about__sp">
+        <div>Zell has been featured in:</div>
+        <div class="u-hide--lt-med"> {% include "featured-mobile.svg" %} </div>
+        <div class="u-hide--gt-med"> {% include "featured.svg" %} </div>
+      </div>
     </div>
   </div>
 </section>
+
+{# I need some featured thingy here. But let me push it out before making it... Boy, I'm regretting now doing this before now #}
 
 <section class="">
   <div class="l-wrap o-text">
@@ -148,53 +155,18 @@
     <div class="l-wrap__text">
       <div class="o-box c-cta">
         {% import 'macros/ck-form.nunjucks' as form %}
-        {{form.ckForm(title = 'Grab the free JavaScript Roadmap and start understanding JavaScript' )}}
+        {{form.ckForm(title = 'Grab the FREE JavaScript Roadmap and begin learning JavaScript' )}}
       </div>
 
       {% markdown %}
       <p class="l-wrap__small">
-        PS: not interested in learning JavaScript? That's fine. I send out a weekly newsletter to my readers become frontend developers. <a href="https://zellwk.com/newsletter/">Sign up here</a> and you'll get the next issue delivered to your inbox.
+        PS: not interested in learning JavaScript? That's fine. I send out a weekly newsletter to help my readers become frontend developers. <a href="https://zellwk.com/newsletter/">Sign up here</a> and you'll get the next issue delivered to your inbox.
       </p>
       {% endmarkdown %}
     </div>
   </div>
-</div>
-
 </section>
 
 <footer class="site-footer"></footer>
 
 {% endblock %}
-
-{#
-(Note: First two steps might take 1-2 days to complete DNS propagation)
-1. Namecheap rediirect to Cloudflare
-  DNS 1 ivy.ns.cloudflare.com
-  DNS 2 will.ns.cloudflare.com
-2. Cloudflare
-  1. Point DNS to 192.241.199.177 (Digital Ocean IP Address)
-3. Digital Ocean
-  1. Create Config
-    1. Create folder to hold site
-    1. Copy/paste config from sites_available
-    2. Edit the config
-    3. Symlink to sites_enabled
-    4. Restart nginx
-  2. HTTPS
-    1. CD to ACME
-    2. Add DNS to openssl.cnf
-    3. Regenerate zell.csr with with openssl req -new -key /acme/private.key -out zell.csr -config /acme/openssl.cnf
-    4. ./acme/renew.sh (might have to try after files are uploaded)
-4. Upload files to server server
-5. Google Analytics
-6. Hotjar tracking code
-7. Title and description
-8. Facebook and Twitter og
-  1. Facebook dimensions: 1200 x 630.  Debug with https://developers.facebook.com/tools/debug/
-  2. Twitter dimensions: 2x1 aspect ratio. Minimum 300x157, Max 4096x4096. Debug with https://cards-dev.twitter.com/validator
-9. Favicon
-  1. Use this: https://realfavicongenerator.net
-10. Google Website Optimizer
-#}
-
-

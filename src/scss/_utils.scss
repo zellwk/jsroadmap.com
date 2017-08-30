@@ -6,3 +6,16 @@
 .u-text-center {
   text-align: center !important;
 }
+
+.u-hide--lt-med {
+  @include bp(med) {
+    display: none;
+  }
+}
+
+.u-hide--gt-med {
+  display: none;
+  @include bp(med) {
+    display: block;
+  }
+}
