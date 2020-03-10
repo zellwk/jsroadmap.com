@@ -56,7 +56,7 @@
     "gulp-useref": "^3.1.0",
     "gulp-util": "^3.0.6",
     "gulp-watch": "^4.3.11",
-    "lodash": "^4.13.1",
+    "lodash": "^4.17.13",
     "mappy-breakpoints": "^0.2.3",
     "minimist": "^1.1.1",
     "modularscale-sass": "^2.1.1",
