@@ -3,6 +3,27 @@
 // General functions for projects
 // ==========
 
+// Author: Ana Tudor
+// Reference: http://thesassway.com/advanced/inverse-trigonometric-functions-with-sass
+// absolute value function
+@function _abs($number) {
+  @if $number >= 0 {
+    @return $number;
+  }
+
+  @return -1 * $number;
+}
+
+// square root function using the Babylonian method
+// http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Babylonian_method
+@function _sqrt($square, $tolerance: 0.001, $estimate: $square / 2) {
+  @if _abs($square - $estimate * $estimate) < $tolerance {
+    @return $estimate;
+  }
+
+  @return _sqrt($square, $tolerance, ($estimate + $square / $estimate) / 2);
+}
+
 // Color
 // -----
 // An easy way to get colors from the $colors map
@@ -26,13 +47,18 @@
   $key: nth($keys, 1);
   $length: length($keys);
   $value: map-get($map, $key);
+
   @if $length > 1 {
     $rest: ();
+
     @for $i from 2 through $length {
       $rest: append($rest, nth($keys, $i));
     }
+
     @return map-fetch($value, $rest);
-  } @else {
+  }
+
+  @else {
     @return $value;
   }
 }

@@ -1,20 +1,32 @@
-.c-testimonial {
-}
-
 .c-testimonial + .c-testimonial {
   margin-top: vr(1.5);
 }
 
 blockquote {
+  position: relative;
   border-left: vr(0.25) solid color(aureolin);
   padding-left: vr(0.75);
 }
 
-cite {
+.c-testimonial cite {
   display: block;
   font-style: normal;
   font-weight: 600;
-  @include typi('s1');
+  @include typi("s1");
   color: #666;
   margin-top: vr(0.5);
+  margin-left: 0.5em;
+}
+
+.c-testimonial img {
+  float: right;
+  width: vr(4);
+  margin-top: vr(0.25);
+  margin-bottom: vr(0.5);
+    margin-left: vr(1);
+  box-shadow: 0 0 0 4px #444;
+
+  @include bp(med) {
+    width: vr(5);
+  }
 }

@@ -2,20 +2,19 @@
 .DS_Store
 profile
 
-#ignore sass caches
-.sass-cache
-
-#ignore sublime projects
-.sublime-project
-.sublime-workspace
-
 #ignore packages
 node_modules
+
+#ignore logs
 *.log
 
 #ignore generated files
-dev
 dist
+rev.json
+_tmp
 
 # Ignore env variables and secret keys
 secrets/*
+
+# For Ulysses
+*.plist

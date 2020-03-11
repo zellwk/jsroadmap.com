@@ -1,0 +1,12 @@
+{
+  "title": "JavaScript Roadmap",
+  "url": "https://jsroadmap.com",
+  "description": "Free email course to help you learn JavaScript without feeling afraid, overwhelmed or confused.",
+  "author": {
+    "name": "Zell Liew",
+    "twitter": "@zellwk",
+    "email": "zellwk@gmail.com",
+    "url": "https://zellwk.com/"
+  },
+  "socialImage": "/images/twitter.jpg"
+}

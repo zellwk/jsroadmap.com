@@ -1,0 +1,64 @@
+---
+layout: _layout/page
+---
+
+<section>
+  <div class="l-wrap o-text">
+    {% markdown %}
+    # Your Roadmap is on the way!
+    {% endmarkdown %}
+
+    <div class="l-wrap__text">
+      {% markdown %}
+      Check your email in a few minutes and you'll find your first lesson in your inbox, waiting patiently to help you learn JavaScript without fear, confusion and overwhelm.
+
+      I'm thrilled to help you start learning JavaScript!
+{#
+      In the meantime, do you know anyone who'd like to learn JavaScript with you? If you do, invite them to take JavaScript Roadmap together with you! It's more fun when you learn together with others :)
+
+      To share the course, simply hit the buttons below!
+
+      <blockquote>
+        🔥 Overcome your fear of JavaScript in @zellwk's JavaScript Roadmap!
+      </blockquote> #}
+
+      {% endmarkdown %}
+      {# <div class=""> #}
+      {# Facebook share button #}
+      {# <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fjsroadmap.com&layout=button&size=large&mobile_iframe=false&appId=1812034912446656&width=73&height=28" width="73" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe> #}
+      {# Twitter share button #}
+      {# <a class="twitter-share-button"
+          data-text="🔥 Overcome your fear of JavaScript in @zellwk's JavaScript Roadmap!"
+          data-url="https://jsroadmap.com"
+          data-size="large">
+        Click to Tweet</a>
+      </div> #}
+    </div>
+  </div>
+
+  {# Twitter share #}
+  <script>
+    window.twttr = (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id))
+        return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs
+        .parentNode
+        .insertBefore(js, fjs);
+
+      t._e = [];
+      t.ready = function (f) {
+        t
+          ._e
+          .push(f);
+      };
+
+      return t;
+    }(document, "script", "twitter-wjs"));
+  </script>
+</section>
