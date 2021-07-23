@@ -23,7 +23,7 @@
     "@11ty/eleventy-plugin-rss": "^1.0.7",
     "@babel/core": "^7.8.4",
     "@babel/plugin-transform-runtime": "^7.8.3",
-    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-env": "^7.14.8",
     "@rollup/plugin-commonjs": "^11.0.2",
     "@rollup/plugin-node-resolve": "^7.1.1",
     "@rollup/plugin-replace": "^2.3.1",
@@ -65,5 +65,8 @@
     "to-camel-case": "^1.0.0",
     "typi": "^3.1.1",
     "zl-fetch": "^3.2.2"
+  },
+  "dependencies": {
+    "babel": "^6.23.0"
   }
 }
